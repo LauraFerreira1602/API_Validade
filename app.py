@@ -37,7 +37,7 @@ def validade_(quantidade, tempo):
             '''
 
             ## Erros possiveis:
-            - Se o formato da data não for correto, resultara em {'Error': 'Invalido'}
+            - Se o formato da validade não for correto, resultara em {'Error': 'Formato invalido'}
 
         """
     try:
@@ -79,7 +79,7 @@ def validade_(quantidade, tempo):
 
     except ValueError:
         return jsonify({
-            'Error': 'Invalido'
+            'Error': 'Formato invalido'
         })
 
 
